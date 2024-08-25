@@ -18,6 +18,12 @@ public class Categoria {
 		this.cursos.add(curso);
 	}
 	
-	
+	public void cursoInexistente() {
+		int i = 0;
+		Curso cursoEncontrado = null;
+		while(i < this.cursos.size() && cursoEncontrado == null) {
+			
+		}
+	}
 	
 }

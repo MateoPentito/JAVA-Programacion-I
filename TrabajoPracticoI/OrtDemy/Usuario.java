@@ -14,7 +14,26 @@ public class Usuario {
 		this.becado = becado;
 	}
 
-	
-	
+	public String getId() {
+		return id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getMail() {
+		return mail;
+	}
+
+	public boolean isBecado() {
+		return becado;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", nombre=" + nombre + ", mail=" + mail + ", becado=" + becado + "]";
+	}
+
 	
 }
