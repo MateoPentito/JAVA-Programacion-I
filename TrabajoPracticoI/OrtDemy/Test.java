@@ -33,9 +33,16 @@ public class Test {
 		categoria1.agregarCurso(curso1);
 		//Se agrega leccion
 		curso1.agregarLecciones(leccion1);
+		//Se agregan usuarios al curso
+		curso1.agregarUsuariosSuscriptos(user1);
+		curso1.agregarUsuariosSuscriptos(user2);
+		curso1.agregarUsuariosSuscriptos(user3);
+		curso1.agregarUsuariosSuscriptos(user4);
+		curso1.agregarUsuariosSuscriptos(user5);
+		curso1.agregarUsuariosSuscriptos(user6);
 
-		System.out.println("Test");
-		//ortDemy.suscribirseACurso("ABC","U1");
+		System.out.println("*************************Test*************************");
+		ortDemy.suscribirseACurso("ABBC","U1");
 
 	}
 

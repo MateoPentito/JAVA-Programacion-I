@@ -11,7 +11,7 @@ public class Curso {
 	private Usuario autor;
 	private ArrayList<Leccion>lecciones;
 	private ArrayList<Usuario>usuariosSuscriptos;
-	int cantUsuarios = 0;
+	private int cantUsuarios = 0;
 
 	
 	public Curso(String id, String titulo, double precio, int valoracion, Usuario autor) {
@@ -31,21 +31,16 @@ public class Curso {
 	}
 
 	public void agregarUsuariosSuscriptos(Usuario usuario) {
-		if(this.usuariosSuscriptos == null) {
-			this.usuariosSuscriptos.add(usuario);
-		}else {
-			for(int i = 0; i<this.usuariosSuscriptos.size();i++) {
-				if(this.usuariosSuscriptos.get(i).isBecado()) {
-					cantUsuarios++;
-				}
-			}
-			if(cantUsuarios <= MAX_ALUMNOS_BECADOS) {
-				this.usuariosSuscriptos.add(usuario);			
-			}
-			if(this.usuariosSuscriptos.size() > 5) {
-				
-			}
+		int i = 0;
+		boolean cantidadMax = false;
+		
+		this.usuariosSuscriptos.add(usuario);
+		if(usuario.isBecado() && cantUsuarios <= MAX_ALUMNOS_BECADOS) {
+			cantUsuarios++;
 		}
+
+		
+
 	}
 
 
