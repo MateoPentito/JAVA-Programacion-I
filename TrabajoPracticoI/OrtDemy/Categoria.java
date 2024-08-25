@@ -18,12 +18,21 @@ public class Categoria {
 		this.cursos.add(curso);
 	}
 	
-	public void cursoInexistente() {
+	public Curso buscarCurso(String id) {
 		int i = 0;
 		Curso cursoEncontrado = null;
 		while(i < this.cursos.size() && cursoEncontrado == null) {
-			
+			if(this.cursos.get(i).getId().equals(id)) {
+				cursoEncontrado = this.cursos.get(i);
+				System.out.println("Entro");
+			}else {
+				i++;
+			}
+			System.out.println("No entro");
 		}
+		return cursoEncontrado;
 	}
+	
+	
 	
 }

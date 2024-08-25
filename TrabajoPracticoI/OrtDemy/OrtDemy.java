@@ -16,7 +16,18 @@ public class OrtDemy {
 	
 	public Resultado suscribirseACurso(String idCurso,String idUsuario) {
 		Resultado resultado = null;
-		
+		for(Categoria categoria : this.categorias) {
+			if(categoria.buscarCurso(idUsuario)== null) {
+				System.out.println("CURSO_INEX");
+				resultado = Resultado.CURSO_INEX;
+			}
+			if(categoria.buscarCurso(idUsuario).getId().equals(idCurso)) {
+				System.out.println("CURSO_EXISTENTE");
+				resultado = Resultado.CURSO_INEX;
+			}
+			System.out.println("CURSO_EXISTENTE");
+
+		}
 		return resultado;
 	}
 	
