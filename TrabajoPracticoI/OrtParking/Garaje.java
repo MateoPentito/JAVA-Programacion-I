@@ -116,6 +116,13 @@ public class Garaje {
 		}
 	}
 
+	public void datosGaraje() {
+		System.out.println("Codigo: "+codigo);
+		for(Vehiculo vehiculo : this.vehiculosEstacionados) {
+			System.out.println(vehiculo.toString());
+		}
+	}
+	
 	public String getCodigo() {
 		return codigo;
 	}

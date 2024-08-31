@@ -55,7 +55,7 @@ public class Test {
 		System.out.println("");
 
 		System.out.println("**********************obtenerInformeEstadoGarajes()**********************");
-		System.out.println(ortParking.obtenerInformeEstadoGarajes()); 
+		ortParking.obtenerInformeEstadoGarajes(); 
 
 		System.out.println("");		
 		System.out.println("**********************mostrarVehiculosSinLlave()**********************");

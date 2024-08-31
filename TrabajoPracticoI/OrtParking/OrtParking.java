@@ -16,9 +16,10 @@ public class OrtParking {
 		}
 	}
 	
-	public ArrayList<Garaje> obtenerInformeEstadoGarajes() {
-		return this.garajes;
-		
+	public void obtenerInformeEstadoGarajes() {
+		for(Garaje garaje : this.garajes) {
+			garaje.datosGaraje();
+		}				
 	}
 	
 	public void agregarGaraje(Garaje garaje) {
