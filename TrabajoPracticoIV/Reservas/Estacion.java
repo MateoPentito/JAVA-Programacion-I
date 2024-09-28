@@ -1,0 +1,7 @@
+package Reservas;
+
+public enum Estacion {
+
+	BUENOS_AIRES,LUJAN,MERCEDES,SUIPACHA,CHIVILICOY,ALBERTI,BRAGADO;
+	
+}

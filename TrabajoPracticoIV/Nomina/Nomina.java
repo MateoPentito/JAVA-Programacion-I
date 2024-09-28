@@ -64,7 +64,7 @@ public class Nomina {
 		while (i < this.empleados.length && empleadoBaja == null) {
 			if (empleadoEncontrado(dni)) {
 				empleadoBaja = buscarEmpleado(dni); 
-//				this.empleados[i] = null;
+
 			}
 			i++;
 		}
